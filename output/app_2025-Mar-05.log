@@ -1,0 +1,538 @@
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>>> Stage- file Upload started <<<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - input file name : SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - Started processing file data_files\SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - No Of Records 299 found in file data_files\SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> Stage- Saving original file ./output//SouthFiled_Contact_Input-300 records_20250305_105526_org.xlsx <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> Stage- Started duplicate identification <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> Number of records 299 <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By last name <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By First Name <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> Stage- Assigning duplicate group id to duplicate rows <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> Saving file with duplicate groups file ./output//SouthFiled_Contact_Input-300 records_20250305_105526_dup.xlsx <<<<<
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - >>>>> duplicate identification Total Processing Time : 0.64 Seconds
+2025-Mar-05 10:55:26 - contact_deduplication - INFO - duplicate resolution Total Processing Time : 0.00 Seconds
+2025-Mar-05 10:55:39 - contact_deduplication - INFO - >>>>> Stage- Started duplicate resolution. <<<<<
+2025-Mar-05 10:55:39 - duplicate_resolution_google_search - INFO - >>>>> Stage- Started assignment of probable duplicate flag : version V1 <<<<<
+2025-Mar-05 10:55:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 10:55:39 - WebScrapper - INFO - Started searching for contact matt gladdish and Email domain hydeparkcapital.com
+2025-Mar-05 10:55:41 - WebScrapper - INFO - List of unfilter URL >>>> ['https://hydeparkcapital.com/team/matt-gladdish/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-advises-ascend-wireless-networks-on-acquisition-by-sovereigns-capital/', 'https://hydeparkcapital.com/our-team/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-advises-harney-hardware-on-sale-to-primesource-brands-a-portfolio-company-of-clearlake-capital-group-l-p/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-announces-sale-of-pirtano-construction-company-to-rising-point-capital/', 'https://hydeparkcapital.com/wp-content/uploads/2025/01/HPC-Landscaping-Market-Insights-Winter-2024-1.pdf', 'https://hydeparkcapital.com/testimonials/', 'https://hydeparkcapital.com/wp-content/uploads/2024/03/HPC-Exterior-Facility-Services-Market-Insights-Q1-2024.pdf', 'https://hydeparkcapital.com/wp-content/uploads/2024/04/HPC-Enviornmental-Health-Safety-Market-Insights-Spring-2024.pdf', 'https://hydeparkcapital.com/wp-content/uploads/2024/05/HPC-Restoration-Remediation-Services-Market-Insights-Spring-2024.pdf']
+2025-Mar-05 10:55:41 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 10:55:41 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': True, 'company_name': 'hyde park capital', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'https://hydeparkcapital.com/team/matt-gladdish/', 'linked_in_profile_url': 'Not found', 'team_url': 'https://hydeparkcapital.com/team', 'website': 'https://hydeparkcapital.com', 'data_source': '', 'msg': ''}
+2025-Mar-05 10:55:41 - WebScrapper - INFO -  Visting website to Check  robot.txt file for https://hydeparkcapital.com
+2025-Mar-05 10:55:43 - WebScrapper - INFO - Request started for : https://hydeparkcapital.com/team/matt-gladdish/
+2025-Mar-05 10:55:45 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 10:55:48 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hyde park capital', 'curr_title': 'director', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'gladdish@hydeparkcapital.com', 'phone': '(813) 383-0202'}
+2025-Mar-05 10:55:48 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 10:55:48 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 10:55:48 - WebScrapper - INFO - Started searching for contact m gladdish and Email domain hydeparkcapital.com
+2025-Mar-05 10:55:51 - WebScrapper - INFO - List of unfilter URL >>>> ['https://hydeparkcapital.com/team/matt-gladdish/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-advises-harney-hardware-on-sale-to-primesource-brands-a-portfolio-company-of-clearlake-capital-group-l-p/', 'https://hydeparkcapital.com/our-team/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-advises-ascend-wireless-networks-on-acquisition-by-sovereigns-capital/', 'https://hydeparkcapital.com/press-release/hyde-park-capital-announces-sale-of-pirtano-construction-company-to-rising-point-capital/', 'https://hydeparkcapital.com/wp-content/uploads/2023/02/HPC-Telecom-Services-Market-Insights-Q1-2023.pdf', 'https://hydeparkcapital.com/wp-content/uploads/2024/03/HPC-Exterior-Facility-Services-Market-Insights-Q1-2024.pdf', 'https://hydeparkcapital.com/wp-content/uploads/2024/04/HPC-Enviornmental-Health-Safety-Market-Insights-Spring-2024.pdf', 'https://hydeparkcapital.com/m_a_newsletters/hvac-services-market-insights-fall-2024/', 'https://www.prnewswire.com/news-releases/hyde-park-capital-advises-harney-hardware-on-sale-to-primesource-brands-a-portfolio-company-of-clearlake-capital-group-lp-302344922.html']
+2025-Mar-05 10:55:51 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 10:55:51 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': True, 'company_name': 'hyde park capital', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'https://hydeparkcapital.com/team/matt-gladdish/', 'linked_in_profile_url': 'Not found', 'team_url': 'https://hydeparkcapital.com/team', 'website': 'https://hydeparkcapital.com', 'data_source': '', 'msg': ''}
+2025-Mar-05 10:55:51 - WebScrapper - INFO - Company- hyde park capital, and its robot file already exists in db.
+2025-Mar-05 10:55:51 - WebScrapper - INFO - Request started for : https://hydeparkcapital.com/team/matt-gladdish/
+2025-Mar-05 10:55:52 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 10:55:55 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hyde park capital', 'curr_title': 'director', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'gladdish@hydeparkcapital.com', 'phone': '(813) 383-0202'}
+2025-Mar-05 10:55:55 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 10:55:55 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 10:55:55 - WebScrapper - INFO - Started searching for contact andrew minkow and Email domain gmail.com
+2025-Mar-05 10:55:57 - WebScrapper - INFO - List of unfilter URL >>>> ['https://pmc.ncbi.nlm.nih.gov/articles/PMC6205949/', 'https://aaahq.org/Outreach/In-Memoriam', 'https://investucatett.com/wp-content/uploads/2017/09/A-Random-Walk-Down-Wall-Street.pdf', 'https://www.magazine.miami.edu/_assets/pdf/miami-magazine-winter-2022.pdf', 'https://magazine.miami.edu/_assets/pdf/miami-magazine-spring-2020.pdf', 'https://research.cs.queensu.ca/home/skill/unique_n3.txt', 'https://www.pacermonitor.com/public/filings/D2IAKLPY/California_Pizza_Kitchen_Inc__txsbke-20-33752__0183.0.pdf', 'http://cvsp.cs.ntua.gr/research/software/dngjnksndjgk/exp/tri2a/graph_nosp_tgpr_asr/words.txt', 'https://jhc.cofc.edu/wp-content/uploads/2022/06/JHSSC-Magazine-Spring-2020-Spring-2022.pdf', 'https://downloads.cs.stanford.edu/nlp/data/jiwei/data/vocab_wiki.txt']
+2025-Mar-05 10:55:57 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 10:55:57 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': False, 'company_name': 'pioneer power solutions', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'Not found', 'linked_in_profile_url': 'Not found', 'team_url': 'Not found', 'website': 'Not found', 'data_source': '', 'msg': ''}
+2025-Mar-05 10:55:57 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 10:55:57 - WebScrapper - INFO - Started searching for contact a minkow and Email domain gmail.com
+2025-Mar-05 10:55:59 - WebScrapper - INFO - List of unfilter URL >>>> ['https://aaahq.org/Outreach/In-Memoriam', 'https://investucatett.com/wp-content/uploads/2017/09/A-Random-Walk-Down-Wall-Street.pdf', 'https://magazine.miami.edu/_assets/pdf/miami-magazine-spring-2020.pdf', 'https://www.magazine.miami.edu/_assets/pdf/miami-magazine-winter-2022.pdf', 'http://cvsp.cs.ntua.gr/research/software/dngjnksndjgk/exp/tri2a/graph_nosp_tgpr_asr/words.txt', 'https://www.pacermonitor.com/public/filings/D2IAKLPY/California_Pizza_Kitchen_Inc__txsbke-20-33752__0183.0.pdf', 'https://washtenawjewishnews.org/wp-content/uploads/2023/08/Sept.-2023-WJN-final-WEB.pdf', 'https://jhc.cofc.edu/wp-content/uploads/2022/06/JHSSC-Magazine-Spring-2020-Spring-2022.pdf', 'https://research.cs.queensu.ca/home/skill/unique_n3.txt', 'https://www.preprints.org/manuscript/202303.0232/v1/download']
+2025-Mar-05 10:55:59 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 10:55:59 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': False, 'company_name': 'pioneer power solutions', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'Not found', 'linked_in_profile_url': 'Not found', 'team_url': 'Not found', 'website': 'Not found', 'data_source': '', 'msg': ''}
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - >>>>>> Stage- file Upload started <<<<<<
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - input file name : SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - Started processing file data_files\SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - No Of Records 299 found in file data_files\SouthFiled_Contact_Input-300 records.xlsx
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - >>>>> Stage- Saving original file ./output//SouthFiled_Contact_Input-300 records_20250305_111812_org.xlsx <<<<<
+2025-Mar-05 11:18:12 - contact_deduplication - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - >>>>> Stage- Started duplicate identification <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - >>>>> Number of records 299 <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By last name <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By First Name <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - >>>>> Stage- Assigning duplicate group id to duplicate rows <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - >>>>> Saving file with duplicate groups file ./output//SouthFiled_Contact_Input-300 records_20250305_111812_dup.xlsx <<<<<
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - >>>>> duplicate identification Total Processing Time : 0.67 Seconds
+2025-Mar-05 11:18:13 - contact_deduplication - INFO - duplicate resolution Total Processing Time : 0.00 Seconds
+2025-Mar-05 11:18:24 - contact_deduplication - INFO - >>>>> Stage- Started duplicate resolution. <<<<<
+2025-Mar-05 11:18:24 - duplicate_resolution_google_search - INFO - >>>>> Stage- Started assignment of probable duplicate flag : version V1 <<<<<
+2025-Mar-05 11:18:24 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 11:18:24 - WebScrapper - INFO - Started searching for contact matt gladdish and Email domain hydeparkcapital.com
+2025-Mar-05 11:18:24 - WebScrapper - INFO - contact : matt gladdish, company hyde park capital google api serach info found from db.
+2025-Mar-05 11:18:24 - WebScrapper - INFO - Company- hyde park capital, and its robot file already exists in db.
+2025-Mar-05 11:18:24 - WebScrapper - INFO - Request started for : https://hydeparkcapital.com/team/matt-gladdish/
+2025-Mar-05 11:18:26 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 11:18:28 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hyde park capital', 'curr_title': 'director', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'gladdish@hydeparkcapital.com', 'phone': '(813) 383-0202'}
+2025-Mar-05 11:18:28 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 11:18:28 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 11:18:28 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 11:18:28 - WebScrapper - INFO - Started searching for contact m gladdish and Email domain hydeparkcapital.com
+2025-Mar-05 11:18:28 - WebScrapper - INFO - contact : m gladdish, company hyde park capital google api serach info found from db.
+2025-Mar-05 11:18:28 - WebScrapper - INFO - Company- hyde park capital, and its robot file already exists in db.
+2025-Mar-05 11:18:28 - WebScrapper - INFO - Request started for : https://hydeparkcapital.com/team/matt-gladdish/
+2025-Mar-05 11:18:30 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 11:18:33 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hyde park capital', 'curr_title': 'director', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'gladdish@hydeparkcapital.com', 'phone': '(813) 383-0202'}
+2025-Mar-05 11:18:33 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 11:18:33 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 11:18:33 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 11:18:33 - WebScrapper - INFO - Started searching for contact andrew minkow and Email domain gmail.com
+2025-Mar-05 11:18:33 - WebScrapper - INFO - contact : andrew minkow, company pioneer power solutions google api serach info found from db.
+2025-Mar-05 11:18:33 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 11:18:33 - WebScrapper - INFO - Started searching for contact a minkow and Email domain gmail.com
+2025-Mar-05 11:18:33 - WebScrapper - INFO - contact : a minkow, company pioneer power solutions google api serach info found from db.
+2025-Mar-05 12:56:38 - contact_deduplication - INFO - >>>>>> Stage- file Upload started <<<<<<
+2025-Mar-05 12:56:38 - contact_deduplication - INFO - input file name : ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 12:56:38 - contact_deduplication - INFO - Started processing file data_files\ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 12:56:39 - contact_deduplication - INFO - No Of Records 1031 found in file data_files\ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 12:56:39 - contact_deduplication - INFO - >>>>> Stage- Saving original file ./output//ACG_Contact_Subset_Mar 4_20250305_125638_org.xlsx <<<<<
+2025-Mar-05 12:56:39 - contact_deduplication - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-Mar-05 12:56:40 - contact_deduplication - INFO - >>>>> Stage- Started duplicate identification <<<<<
+2025-Mar-05 12:56:40 - contact_deduplication - INFO - >>>>> Number of records 1031 <<<<<
+2025-Mar-05 12:56:40 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By last name <<<<<
+2025-Mar-05 12:56:42 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By First Name <<<<<
+2025-Mar-05 12:56:42 - contact_deduplication - INFO - >>>>> Stage- Assigning duplicate group id to duplicate rows <<<<<
+2025-Mar-05 12:56:42 - contact_deduplication - INFO - >>>>> Saving file with duplicate groups file ./output//ACG_Contact_Subset_Mar 4_20250305_125638_dup.xlsx <<<<<
+2025-Mar-05 12:56:44 - contact_deduplication - INFO - >>>>> duplicate identification Total Processing Time : 6.06 Seconds
+2025-Mar-05 12:56:44 - contact_deduplication - INFO - duplicate resolution Total Processing Time : 0.00 Seconds
+2025-Mar-05 13:05:05 - contact_deduplication - INFO - >>>>> Stage- Started duplicate resolution. <<<<<
+2025-Mar-05 13:05:05 - duplicate_resolution_google_search - INFO - >>>>> Stage- Started assignment of probable duplicate flag : version V1 <<<<<
+2025-Mar-05 13:05:05 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:05 - WebScrapper - INFO - Started searching for contact christopher abate and Email domain redwoodtrust.com
+2025-Mar-05 13:05:05 - WebScrapper - INFO - contact : christopher abate, company redwood trust google api serach info found from db.
+2025-Mar-05 13:05:05 - WebScrapper - INFO - Company- redwood trust, and its robot file already exists in db.
+2025-Mar-05 13:05:05 - WebScrapper - INFO - Request started for : https://www.redwoodtrust.com/investor-relations/company-information/executive-team
+2025-Mar-05 13:05:06 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Open Ai response : {'curr_org': 'Redwood Trust', 'curr_title': 'Chief Executive Officer', 'prv_org': 'PricewaterhouseCoopers LLP', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:05:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Started searching for contact christopher abbate and Email domain riverstonellc.com
+2025-Mar-05 13:05:10 - WebScrapper - INFO - contact : christopher abbate, company riverstone holdings google api serach info found from db.
+2025-Mar-05 13:05:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Started searching for contact christopher abbate and Email domain riverstonellc.com
+2025-Mar-05 13:05:10 - WebScrapper - INFO - contact : christopher abbate, company riverstone holdings google api serach info found from db.
+2025-Mar-05 13:05:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Started searching for contact michael abbott and Email domain aric.com
+2025-Mar-05 13:05:10 - WebScrapper - INFO - contact : michael abbott, company american republic insurance company google api serach info found from db.
+2025-Mar-05 13:05:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Started searching for contact michele abbott and Email domain wellmaster.com
+2025-Mar-05 13:05:10 - WebScrapper - INFO - contact : michele abbott, company well master corporation google api serach info found from db.
+2025-Mar-05 13:05:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:10 - WebScrapper - INFO - Started searching for contact jason abbott and Email domain fticonsulting.com
+2025-Mar-05 13:05:10 - WebScrapper - INFO - contact : jason abbott, company fti consulting google api serach info found from db.
+2025-Mar-05 13:05:11 - WebScrapper - INFO - Company- fti consulting, and its robot file already exists in db.
+2025-Mar-05 13:05:11 - WebScrapper - INFO - Request started for : https://www.fticonsulting.com/experts/jason-p-abbott
+2025-Mar-05 13:05:12 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Open Ai response : {'curr_org': 'FTI Consulting', 'curr_title': 'Senior Managing Director, Leader of Financial Diligence', 'prv_org': 'Deloitte & Touche', 'prv_title': 'Investment Planning Consultant', 'email': 'jason.abbott@fticonsulting.com', 'phone': '+1 312 630 4802'}
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact john abbott and Email domain meetme.com
+2025-Mar-05 13:05:16 - WebScrapper - INFO - contact : john abbott, company meetme.com google api serach info found from db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact david abbott and Email domain gundfdn.org
+2025-Mar-05 13:05:16 - WebScrapper - INFO - contact : david abbott, company george gund foundation google api serach info found from db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact d abbott and Email domain shelterinsurance.com
+2025-Mar-05 13:05:16 - WebScrapper - INFO - contact : d abbott, company shelter insurance google api serach info found from db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - company : shelter insurance, url : https://www.shelterinsurance.com/ca/agent/mabbott contact information Not found found in db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact chris abbruzzese and Email domain raincapital.com
+2025-Mar-05 13:05:16 - WebScrapper - INFO - contact : chris abbruzzese, company rain capital management google api serach info found from db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact chris abbruzzese and Email domain am-a.com
+2025-Mar-05 13:05:16 - WebScrapper - INFO - contact : chris abbruzzese, company arnerich massena & associates google api serach info found from db.
+2025-Mar-05 13:05:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:16 - WebScrapper - INFO - Started searching for contact david absolon, and Email domain heartwoodwealth.com
+2025-Mar-05 13:05:17 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:05:18 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:05:18 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:05:18 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:18 - WebScrapper - INFO - Started searching for contact david absolon and Email domain heartwoodgroup.uk
+2025-Mar-05 13:05:18 - WebScrapper - INFO - contact : david absolon, company heartwood google api serach info found from db.
+2025-Mar-05 13:05:18 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:18 - WebScrapper - INFO - Started searching for contact james ackerman and Email domain aptusfutures.com
+2025-Mar-05 13:05:19 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:19 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:20 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:20 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:20 - WebScrapper - INFO - Started searching for contact james ackerman and Email domain ackermanasset.com
+2025-Mar-05 13:05:20 - WebScrapper - INFO - contact : james ackerman, company ackerman asset management, llc google api serach info found from db.
+2025-Mar-05 13:05:20 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:20 - WebScrapper - INFO - Started searching for contact jane ackerman and Email domain jpmorgan.com
+2025-Mar-05 13:05:20 - WebScrapper - INFO - contact : jane ackerman, company jp morgan google api serach info found from db.
+2025-Mar-05 13:05:20 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:20 - WebScrapper - INFO - Started searching for contact john ackerman and Email domain cardinalep.com
+2025-Mar-05 13:05:22 - WebScrapper - INFO - List of unfilter URL >>>> ['https://www.cardinalep.com/', 'https://www.linkedin.com/in/john-ackerman-6a871114', 'https://www.cardinalep.com/wp-content/uploads/CEP-ConfidentialityAgreement.pdf', 'https://www.acg.org/indiana/events/acg-indiana-polywoods-company-story', 'https://rocketreach.co/john-ackerman-email_15418992', 'https://peprofessional.com/2017/11/wild-sports-partners-expedition-centerfield-cardinal/', 'https://rocketreach.co/john-ackerman-email_15418991', 'https://massinvestordatabase.com/Cardinal+Equity+Partners/investmentfirm.php', 'http://assets.usta.com/assets/640/usta_import/images/sitecore_ustasections/midwest/document%20assets/2009/community%20tennis/grant%20resource%20manual.pdf', 'https://massinvestordatabase.com/files/eBook_Venture%20Capital%20&%20PE_Demo.pdf']
+2025-Mar-05 13:05:22 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 13:05:22 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': False, 'company_name': 'cardinal equity partners', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'Not found', 'linked_in_profile_url': 'https://www.linkedin.com/in/john-ackerman-6a871114', 'team_url': 'Not found', 'website': 'Not found', 'data_source': '', 'msg': ''}
+2025-Mar-05 13:05:22 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:22 - WebScrapper - INFO - Started searching for contact jason ackerman and Email domain freshdirect.com
+2025-Mar-05 13:05:22 - WebScrapper - INFO - contact : jason ackerman, company fresh direct holdings google api serach info found from db.
+2025-Mar-05 13:05:22 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:22 - WebScrapper - INFO - Started searching for contact michael aho and Email domain tigergroupllc.com
+2025-Mar-05 13:05:22 - WebScrapper - INFO - contact : michael aho, company tiger valuation services llc google api serach info found from db.
+2025-Mar-05 13:05:22 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:22 - WebScrapper - INFO - Started searching for contact michael aho and Email domain tigerval.com
+2025-Mar-05 13:05:22 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:23 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:23 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:05:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:23 - WebScrapper - INFO - Started searching for contact michael aho and Email domain hginc.com
+2025-Mar-05 13:05:23 - WebScrapper - INFO - contact : michael aho, company heritage global partners google api serach info found from db.
+2025-Mar-05 13:05:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:23 - WebScrapper - INFO - Started searching for contact tuomas ahonen and Email domain genesta.fi
+2025-Mar-05 13:05:23 - WebScrapper - INFO - contact : tuomas ahonen, company genesta property google api serach info found from db.
+2025-Mar-05 13:05:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:23 - WebScrapper - INFO - Started searching for contact tom ahonen and Email domain heartland.fund
+2025-Mar-05 13:05:23 - WebScrapper - INFO - contact : tom ahonen, company heartland equity partners google api serach info found from db.
+2025-Mar-05 13:05:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:23 - WebScrapper - INFO - Started searching for contact amit ahuja and Email domain adobe.com
+2025-Mar-05 13:05:25 - WebScrapper - INFO - List of unfilter URL >>>> ['https://www.linkedin.com/in/amitahuja76', 'https://summit.adobe.com/na/speakers/', 'https://news.adobe.com/news/news-details/2024/media-alert-adobe-announces-workfront-planning-to-deliver-a-unified-view-of-marketing-campaigns-and-drive-faster-execution', 'https://business.adobe.com/blog/the-latest/presenting-the-winners-of-the-2023-adobe-experience-maker-awards', 'https://news.adobe.com/news/news-details/2023/adobe-brings-worlds-first-ai-accelerated-content-supply-chain-solution-to-europe-to-fuel-experience-led-growth', 'https://www.businesswire.com/news/home/20240326694012/en/Adobe-Leverages-AI-to-Advance-Personalized-Customer-Journeys-Through-Real-Time-Experimentation', 'https://blog.adobe.com/en/publish/2024/11/19/adobe-microsoft-strengthen-partnership-to-empower-marketing-teams-accelerate-business-outcomes', 'https://www.businesswire.com/news/home/20240916528591/en/Adobe-Unveils-Innovations-in-Adobe-Experience-Cloud-for-Brands-to-Personalize-and-Measure-AI-generated-Content', 'https://news.microsoft.com/2024/03/26/adobe-and-microsoft-partner-to-bring-new-generative-ai-capabilities-to-marketers-as-they-work-in-microsoft-365-applications/', 'https://www.businesswire.com/news/home/20240807552993/en/Adobe-Transforms-B2B-Marketing-with-Generative-AI-Powered-Journey-Optimizer-to-Reach-Buying-Groups']
+2025-Mar-05 13:05:25 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 13:05:25 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': False, 'company_name': 'adobe systems incorporated', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'Not found', 'linked_in_profile_url': 'https://www.linkedin.com/in/amitahuja76', 'team_url': 'Not found', 'website': 'Not found', 'data_source': '', 'msg': ''}
+2025-Mar-05 13:05:25 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:25 - WebScrapper - INFO - Started searching for contact ajay ahuja and Email domain bbc.uk
+2025-Mar-05 13:05:25 - WebScrapper - INFO - contact : ajay ahuja, company british broadcasting corporation (bbc) pension trust google api serach info found from db.
+2025-Mar-05 13:05:25 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:25 - WebScrapper - INFO - Started searching for contact ajay ahuja and Email domain gmail.com
+2025-Mar-05 13:05:25 - WebScrapper - INFO - contact : ajay ahuja, company the new amsterdam group google api serach info found from db.
+2025-Mar-05 13:05:26 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:26 - WebScrapper - INFO - Started searching for contact john aiello and Email domain lindsaygoldbergllc.com
+2025-Mar-05 13:05:26 - WebScrapper - INFO - contact : john aiello, company lindsay goldberg google api serach info found from db.
+2025-Mar-05 13:05:26 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:26 - WebScrapper - INFO - Started searching for contact john aiello and Email domain ghclaw.com
+2025-Mar-05 13:05:26 - WebScrapper - INFO - contact : john aiello, company giordano halleran & ciesla google api serach info found from db.
+2025-Mar-05 13:05:26 - WebScrapper - INFO - Company- giordano halleran & ciesla, and its robot file already exists in db.
+2025-Mar-05 13:05:26 - WebScrapper - INFO - Request started for : https://www.ghclaw.com/john-a-aiello
+2025-Mar-05 13:05:28 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:32 - WebScrapper - INFO - Open Ai response : {'curr_org': 'giordano, halleran & ciesla, p.c.', 'curr_title': 'shareholder', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'jaiello@ghclaw.com', 'phone': '(732) 741-3900'}
+2025-Mar-05 13:05:32 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:05:32 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:05:32 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:32 - WebScrapper - INFO - Started searching for contact john aiello and Email domain comcast.net
+2025-Mar-05 13:05:32 - WebScrapper - INFO - contact : john aiello, company avengage google api serach info found from db.
+2025-Mar-05 13:05:32 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:32 - WebScrapper - INFO - Started searching for contact vignesh aier and Email domain newmountaincapital.com
+2025-Mar-05 13:05:34 - WebScrapper - INFO - List of unfilter URL >>>> ['https://www.newmountaincapital.com/new-mountain-capital-partners-with-censeohealth-and-advance-health/', 'https://www.growthcurvecapital.com/team/vignesh-aier', 'https://www.newmountaincapital.com/island-medical-management-partners-with-new-mountain-capital/', 'https://www.prnewswire.com/news-releases/censeohealth-and-advance-health-announce-investment-by-new-mountain-capital-300568404.html', 'https://www.sec.gov/Archives/edgar/data/1828182/000182818221000006/exhibit1039.htm']
+2025-Mar-05 13:05:34 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 13:05:34 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': True, 'company_name': 'new mountain capital', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'https://www.newmountaincapital.com/island-medical-management-partners-with-new-mountain-capital/', 'linked_in_profile_url': 'Not found', 'team_url': 'https://www.newmountaincapital.com/island-medical-management', 'website': 'https://www.newmountaincapital.com', 'data_source': '', 'msg': ''}
+2025-Mar-05 13:05:34 - WebScrapper - INFO - Company- new mountain capital, and its robot file already exists in db.
+2025-Mar-05 13:05:34 - WebScrapper - INFO - Request started for : https://www.newmountaincapital.com/island-medical-management-partners-with-new-mountain-capital/
+2025-Mar-05 13:05:36 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Open Ai response : {'curr_org': 'island medical management, llc', 'curr_title': 'founder and chairman', 'prv_org': 'new mountain capital, llc', 'prv_title': 'director', 'email': '[emailprotected]', 'phone': '(631) 299-2484'}
+2025-Mar-05 13:05:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Started searching for contact thomas barber and Email domain sbjcap.com
+2025-Mar-05 13:05:39 - WebScrapper - INFO - contact : thomas barber, company spanos barber jesse & co. google api serach info found from db.
+2025-Mar-05 13:05:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Started searching for contact tom barber and Email domain blackcanyoncapital.com
+2025-Mar-05 13:05:39 - WebScrapper - INFO - contact : tom barber, company black canyon capital google api serach info found from db.
+2025-Mar-05 13:05:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Started searching for contact john barber and Email domain bridgepoint.eu
+2025-Mar-05 13:05:39 - WebScrapper - INFO - contact : john barber, company bridgepoint google api serach info found from db.
+2025-Mar-05 13:05:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Started searching for contact jon barber and Email domain fflpartners.com
+2025-Mar-05 13:05:39 - WebScrapper - INFO - contact : jon barber, company ffl partners google api serach info found from db.
+2025-Mar-05 13:05:39 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:39 - WebScrapper - INFO - Started searching for contact john barber and Email domain cohesivecapital.com
+2025-Mar-05 13:05:40 - WebScrapper - INFO - contact : john barber, company cohesive capital partners google api serach info found from db.
+2025-Mar-05 13:05:40 - WebScrapper - INFO - Company- cohesive capital partners, and its robot file already exists in db.
+2025-Mar-05 13:05:40 - WebScrapper - INFO - Request started for : https://cohesivecapital.com/team/
+2025-Mar-05 13:05:41 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:47 - WebScrapper - INFO - Open Ai response : {'curr_org': 'cohesive', 'curr_title': 'executive assistant office manager', 'prv_org': 'evercore', 'prv_title': 'sales assistant', 'email': '[emailprotected]', 'phone': '(212) 616-9678'}
+2025-Mar-05 13:05:47 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:47 - WebScrapper - INFO - Started searching for contact david barbour and Email domain ffandp.com
+2025-Mar-05 13:05:47 - WebScrapper - INFO - contact : david barbour, company ff&p fund advisors limited google api serach info found from db.
+2025-Mar-05 13:05:47 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:47 - WebScrapper - INFO - Started searching for contact david barbour and Email domain fpecapital.com
+2025-Mar-05 13:05:49 - WebScrapper - INFO - List of unfilter URL >>>> ['https://www.fpecapital.com/news/fpe-capital-raises-100-million-for-its-maiden-institutional-fund', 'https://uk.linkedin.com/in/david-barbour-b62559', 'https://www.fpecapital.com/news/fpe-capital-secures-successful-exit-from-ikon-science-on-new-investment-from-great-hill-partners', 'https://www.fpecapital.com/about-us/people/dan-walker', 'https://www.fpecapital.com/news/fpe-announces-appointment-of-sam-greenberg-to-its-investment-team-strengthening-its-software-and-services-focus-following-successful-fund-iii-raise', 'https://rocketreach.co/david-barbour-email_54533083', 'https://www.uktechexits.news/2021/01/18/iwsr-drink-market-analysis-acquires-wine-intelligence/', 'https://www.uktechexits.news/2022/04/04/fpe-capital-llp-acquires-egress-a-cloud-data-migration-specialist/', 'https://www.uktechnews.info/2020/11/06/togetherall-secures-7-6-million-growth-private-equity-investment-from-fpe-capital/', 'https://www.crunchbase.com/organization/fpe-capital']
+2025-Mar-05 13:05:49 - WebScrapper - INFO - ---------------------------------------------------------------------------
+2025-Mar-05 13:05:49 - WebScrapper - INFO - List of filter URL >>>> {'is_current_org': True, 'company_name': 'fpe capital', 'llm_curr_org': 'Not found', 'llm_curr_title': 'Not found', 'llm_prv_org': 'Not found', 'llm_prv_title': 'Not found', 'llm_email': 'Not found', 'llm_phone': 'Not found', 'source_url': 'https://www.fpecapital.com/about-us/people/dan-walker', 'linked_in_profile_url': 'https://uk.linkedin.com/in/david-barbour-b62559', 'team_url': 'https://www.fpecapital.com/about', 'website': 'https://www.fpecapital.com', 'data_source': '', 'msg': ''}
+2025-Mar-05 13:05:49 - WebScrapper - INFO -  Visting website to Check  robot.txt file for https://www.fpecapital.com
+2025-Mar-05 13:05:51 - WebScrapper - INFO - Request started for : https://www.fpecapital.com/about-us/people/dan-walker
+2025-Mar-05 13:05:53 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:05:56 - WebScrapper - INFO - Open Ai response : {'curr_org': 'fpe', 'curr_title': 'partner and co-founder', 'prv_org': 'singer & friedlander and rbs', 'prv_title': 'lending banker', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:05:57 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Started searching for contact david barcus and Email domain knight.com
+2025-Mar-05 13:05:57 - WebScrapper - INFO - contact : david barcus, company kcg holdings google api serach info found from db.
+2025-Mar-05 13:05:57 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Started searching for contact david barcus and Email domain denison.edu
+2025-Mar-05 13:05:57 - WebScrapper - INFO - contact : david barcus, company denison university google api serach info found from db.
+2025-Mar-05 13:05:57 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Started searching for contact harv barenz and Email domain hgequity.com
+2025-Mar-05 13:05:57 - WebScrapper - INFO - contact : harv barenz, company huntsman gay global capital google api serach info found from db.
+2025-Mar-05 13:05:57 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Started searching for contact harv barenz and Email domain hggc.com
+2025-Mar-05 13:05:57 - WebScrapper - INFO - contact : harv barenz, company hggc -thomson google api serach info found from db.
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Company- hggc -thomson, and its robot file already exists in db.
+2025-Mar-05 13:05:57 - WebScrapper - INFO - Request started for : https://www.hggc.com/team/harv-barenz
+2025-Mar-05 13:05:59 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hggc', 'curr_title': 'head of business development and partner', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:06:02 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact bhavan barhate and Email domain northernarc.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : bhavan barhate, company northern arc investments google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact bhavan barhate and Email domain ifmr.in
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : bhavan barhate, company northern arc investments google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact philip barker and Email domain arenawealth.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : philip barker, company arena wealth management limited google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact philip barker and Email domain cavendish.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : philip barker, company cavendish google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact veit schwinkendorf and Email domain rolandberger.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : veit schwinkendorf, company  google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact jordan selleck and Email domain bdapartners.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : jordan selleck, company bda partners google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Started searching for contact j selleck and Email domain 5149labs.com
+2025-Mar-05 13:06:02 - WebScrapper - INFO - contact : j selleck, company 51-49 labs google api serach info found from db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Company- 51-49 labs, and its robot file already exists in db.
+2025-Mar-05 13:06:02 - WebScrapper - INFO - Request started for : https://5149labs.com/who-we-are/
+2025-Mar-05 13:06:03 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:06:07 - WebScrapper - INFO - Open Ai response : {'curr_org': '51 labs', 'curr_title': 'co-founder & co-ceo', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:06:08 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:06:08 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:06:08 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:08 - WebScrapper - INFO - Started searching for contact joel stevens and Email domain bernstein.com
+2025-Mar-05 13:06:08 - WebScrapper - INFO - contact : joel stevens, company bernstein google api serach info found from db.
+2025-Mar-05 13:06:08 - WebScrapper - INFO - Company- bernstein, and its robot file already exists in db.
+2025-Mar-05 13:06:08 - WebScrapper - INFO - Request started for : https://www.bernstein.com/about-us/locations/tampa/joel-stevens.html
+2025-Mar-05 13:06:11 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:06:15 - WebScrapper - INFO - Open Ai response : {'curr_org': 'Bernstein', 'curr_title': 'National Managing Director, National Business Development', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:06:15 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:06:15 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:06:15 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:15 - WebScrapper - INFO - Started searching for contact john stevens and Email domain gmam.com
+2025-Mar-05 13:06:15 - WebScrapper - INFO - contact : john stevens, company gm asset management google api serach info found from db.
+2025-Mar-05 13:06:15 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:06:15 - WebScrapper - INFO - Started searching for contact john stevens and Email domain mazuma.org
+2025-Mar-05 13:06:15 - WebScrapper - INFO - contact : john stevens, company mazuma google api serach info found from db.
+2025-Mar-05 13:54:44 - contact_deduplication - INFO - >>>>>> Stage- file Upload started <<<<<<
+2025-Mar-05 13:54:44 - contact_deduplication - INFO - input file name : ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 13:54:44 - contact_deduplication - INFO - Started processing file data_files\ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 13:54:45 - contact_deduplication - INFO - No Of Records 1031 found in file data_files\ACG_Contact_Subset_Mar 4.xlsx
+2025-Mar-05 13:54:45 - contact_deduplication - INFO - >>>>> Stage- Saving original file ./output//ACG_Contact_Subset_Mar 4_20250305_135444_org.xlsx <<<<<
+2025-Mar-05 13:54:45 - contact_deduplication - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-Mar-05 13:54:47 - contact_deduplication - INFO - >>>>> Stage- Started duplicate identification <<<<<
+2025-Mar-05 13:54:47 - contact_deduplication - INFO - >>>>> Number of records 1031 <<<<<
+2025-Mar-05 13:54:47 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By last name <<<<<
+2025-Mar-05 13:54:50 - contact_deduplication - INFO -  >>>>> Stage- Find Duplicate Records By First Name <<<<<
+2025-Mar-05 13:54:50 - contact_deduplication - INFO - >>>>> Stage- Assigning duplicate group id to duplicate rows <<<<<
+2025-Mar-05 13:54:50 - contact_deduplication - INFO - >>>>> Saving file with duplicate groups file ./output//ACG_Contact_Subset_Mar 4_20250305_135444_dup.xlsx <<<<<
+2025-Mar-05 13:54:52 - contact_deduplication - INFO - >>>>> duplicate identification Total Processing Time : 7.83 Seconds
+2025-Mar-05 13:54:52 - contact_deduplication - INFO - duplicate resolution Total Processing Time : 0.00 Seconds
+2025-Mar-05 13:56:58 - contact_deduplication - INFO - >>>>> Stage- Started duplicate resolution. <<<<<
+2025-Mar-05 13:56:58 - duplicate_resolution_google_search - INFO - >>>>> Stage- Started assignment of probable duplicate flag : version V1 <<<<<
+2025-Mar-05 13:56:58 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:56:58 - WebScrapper - INFO - Started searching for contact christopher abate and Email domain redwoodtrust.com
+2025-Mar-05 13:56:58 - WebScrapper - INFO - contact : christopher abate, company redwood trust google api serach info found from db.
+2025-Mar-05 13:56:58 - WebScrapper - INFO - Company- redwood trust, and its robot file already exists in db.
+2025-Mar-05 13:56:58 - WebScrapper - INFO - Request started for : https://www.redwoodtrust.com/investor-relations/company-information/executive-team
+2025-Mar-05 13:56:59 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Open Ai response : {'curr_org': 'redwood trust', 'curr_title': 'chief executive officer', 'prv_org': 'pricewaterhousecoopers llp', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:57:04 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Started searching for contact christopher abbate and Email domain riverstonellc.com
+2025-Mar-05 13:57:04 - WebScrapper - INFO - contact : christopher abbate, company riverstone holdings google api serach info found from db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Started searching for contact christopher abbate and Email domain riverstonellc.com
+2025-Mar-05 13:57:04 - WebScrapper - INFO - contact : christopher abbate, company riverstone holdings google api serach info found from db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Started searching for contact michael abbott and Email domain aric.com
+2025-Mar-05 13:57:04 - WebScrapper - INFO - contact : michael abbott, company american republic insurance company google api serach info found from db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Started searching for contact michele abbott and Email domain wellmaster.com
+2025-Mar-05 13:57:04 - WebScrapper - INFO - contact : michele abbott, company well master corporation google api serach info found from db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Started searching for contact jason abbott and Email domain fticonsulting.com
+2025-Mar-05 13:57:04 - WebScrapper - INFO - contact : jason abbott, company fti consulting google api serach info found from db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Company- fti consulting, and its robot file already exists in db.
+2025-Mar-05 13:57:04 - WebScrapper - INFO - Request started for : https://www.fticonsulting.com/experts/jason-p-abbott
+2025-Mar-05 13:57:06 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Open Ai response : {'curr_org': 'FTI Consulting', 'curr_title': 'Senior Managing Director, Leader of Financial Diligence', 'prv_org': 'Deloitte & Touche', 'prv_title': 'Investment Planning', 'email': 'jason.abbott@fticonsulting.com', 'phone': '+1 312 630 4802'}
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact john abbott and Email domain meetme.com
+2025-Mar-05 13:57:10 - WebScrapper - INFO - contact : john abbott, company meetme.com google api serach info found from db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact david abbott and Email domain gundfdn.org
+2025-Mar-05 13:57:10 - WebScrapper - INFO - contact : david abbott, company george gund foundation google api serach info found from db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact d abbott and Email domain shelterinsurance.com
+2025-Mar-05 13:57:10 - WebScrapper - INFO - contact : d abbott, company shelter insurance google api serach info found from db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - company : shelter insurance, url : https://www.shelterinsurance.com/ca/agent/mabbott contact information Not found found in db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact chris abbruzzese and Email domain raincapital.com
+2025-Mar-05 13:57:10 - WebScrapper - INFO - contact : chris abbruzzese, company rain capital management google api serach info found from db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact chris abbruzzese and Email domain am-a.com
+2025-Mar-05 13:57:10 - WebScrapper - INFO - contact : chris abbruzzese, company arnerich massena & associates google api serach info found from db.
+2025-Mar-05 13:57:10 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:10 - WebScrapper - INFO - Started searching for contact david absolon, and Email domain heartwoodwealth.com
+2025-Mar-05 13:57:11 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:57:11 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:57:12 - WebScrapper - INFO - google api response Not found for this Result:management
+2025-Mar-05 13:57:12 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:12 - WebScrapper - INFO - Started searching for contact david absolon and Email domain heartwoodgroup.uk
+2025-Mar-05 13:57:12 - WebScrapper - INFO - contact : david absolon, company heartwood google api serach info found from db.
+2025-Mar-05 13:57:12 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:12 - WebScrapper - INFO - Started searching for contact james ackerman and Email domain aptusfutures.com
+2025-Mar-05 13:57:13 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:13 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:14 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact james ackerman and Email domain ackermanasset.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - contact : james ackerman, company ackerman asset management, llc google api serach info found from db.
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact jane ackerman and Email domain jpmorgan.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - contact : jane ackerman, company jp morgan google api serach info found from db.
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact john ackerman and Email domain cardinalep.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - contact : john ackerman, company cardinal equity partners google api serach info found from db.
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact jason ackerman and Email domain freshdirect.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - contact : jason ackerman, company fresh direct holdings google api serach info found from db.
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact michael aho and Email domain tigergroupllc.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - contact : michael aho, company tiger valuation services llc google api serach info found from db.
+2025-Mar-05 13:57:14 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:14 - WebScrapper - INFO - Started searching for contact michael aho and Email domain tigerval.com
+2025-Mar-05 13:57:14 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:15 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:16 - WebScrapper - INFO - google api response Not found for this Result:llc
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact michael aho and Email domain hginc.com
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : michael aho, company heritage global partners google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact tuomas ahonen and Email domain genesta.fi
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : tuomas ahonen, company genesta property google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact tom ahonen and Email domain heartland.fund
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : tom ahonen, company heartland equity partners google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact amit ahuja and Email domain adobe.com
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : amit ahuja, company adobe systems incorporated google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact ajay ahuja and Email domain bbc.uk
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : ajay ahuja, company british broadcasting corporation (bbc) pension trust google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact ajay ahuja and Email domain gmail.com
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : ajay ahuja, company the new amsterdam group google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact john aiello and Email domain lindsaygoldbergllc.com
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : john aiello, company lindsay goldberg google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Started searching for contact john aiello and Email domain ghclaw.com
+2025-Mar-05 13:57:16 - WebScrapper - INFO - contact : john aiello, company giordano halleran & ciesla google api serach info found from db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Company- giordano halleran & ciesla, and its robot file already exists in db.
+2025-Mar-05 13:57:16 - WebScrapper - INFO - Request started for : https://www.ghclaw.com/john-a-aiello
+2025-Mar-05 13:57:19 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:23 - WebScrapper - INFO - Open Ai response : {'curr_org': 'giordano, halleran & ciesla, p.c.', 'curr_title': 'shareholder', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'jaiello@ghclaw.com', 'phone': '(732) 741-3900'}
+2025-Mar-05 13:57:23 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:57:23 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:57:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:23 - WebScrapper - INFO - Started searching for contact john aiello and Email domain comcast.net
+2025-Mar-05 13:57:23 - WebScrapper - INFO - contact : john aiello, company avengage google api serach info found from db.
+2025-Mar-05 13:57:23 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:23 - WebScrapper - INFO - Started searching for contact vignesh aier and Email domain newmountaincapital.com
+2025-Mar-05 13:57:23 - WebScrapper - INFO - contact : vignesh aier, company new mountain capital google api serach info found from db.
+2025-Mar-05 13:57:23 - WebScrapper - INFO - Company- new mountain capital, and its robot file already exists in db.
+2025-Mar-05 13:57:23 - WebScrapper - INFO - Request started for : https://www.newmountaincapital.com/island-medical-management-partners-with-new-mountain-capital/
+2025-Mar-05 13:57:25 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:29 - WebScrapper - INFO - Open Ai response : {'curr_org': 'island medical management, llc', 'curr_title': 'founder and chairman', 'prv_org': 'new mountain capital, llc', 'prv_title': 'director', 'email': 'Not found', 'phone': '(631) 299-2484'}
+2025-Mar-05 13:57:29 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:29 - WebScrapper - INFO - Started searching for contact thomas barber and Email domain sbjcap.com
+2025-Mar-05 13:57:29 - WebScrapper - INFO - contact : thomas barber, company spanos barber jesse & co. google api serach info found from db.
+2025-Mar-05 13:57:29 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:29 - WebScrapper - INFO - Started searching for contact tom barber and Email domain blackcanyoncapital.com
+2025-Mar-05 13:57:29 - WebScrapper - INFO - contact : tom barber, company black canyon capital google api serach info found from db.
+2025-Mar-05 13:57:29 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:29 - WebScrapper - INFO - Started searching for contact john barber and Email domain bridgepoint.eu
+2025-Mar-05 13:57:29 - WebScrapper - INFO - contact : john barber, company bridgepoint google api serach info found from db.
+2025-Mar-05 13:57:30 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:30 - WebScrapper - INFO - Started searching for contact jon barber and Email domain fflpartners.com
+2025-Mar-05 13:57:30 - WebScrapper - INFO - contact : jon barber, company ffl partners google api serach info found from db.
+2025-Mar-05 13:57:30 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:30 - WebScrapper - INFO - Started searching for contact john barber and Email domain cohesivecapital.com
+2025-Mar-05 13:57:30 - WebScrapper - INFO - contact : john barber, company cohesive capital partners google api serach info found from db.
+2025-Mar-05 13:57:30 - WebScrapper - INFO - Company- cohesive capital partners, and its robot file already exists in db.
+2025-Mar-05 13:57:30 - WebScrapper - INFO - Request started for : https://cohesivecapital.com/team/
+2025-Mar-05 13:57:31 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:36 - WebScrapper - INFO - Open Ai response : {'curr_org': 'cohesive', 'curr_title': 'executive assistant office manager', 'prv_org': 'evercore', 'prv_title': 'sales assistant', 'email': '[emailprotected]', 'phone': '(212) 616-9678'}
+2025-Mar-05 13:57:37 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:37 - WebScrapper - INFO - Started searching for contact david barbour and Email domain ffandp.com
+2025-Mar-05 13:57:37 - WebScrapper - INFO - contact : david barbour, company ff&p fund advisors limited google api serach info found from db.
+2025-Mar-05 13:57:37 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:37 - WebScrapper - INFO - Started searching for contact david barbour and Email domain fpecapital.com
+2025-Mar-05 13:57:37 - WebScrapper - INFO - contact : david barbour, company fpe capital google api serach info found from db.
+2025-Mar-05 13:57:37 - WebScrapper - INFO - Company- fpe capital, and its robot file already exists in db.
+2025-Mar-05 13:57:37 - WebScrapper - INFO - Request started for : https://www.fpecapital.com/about-us/people/dan-walker
+2025-Mar-05 13:57:40 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:43 - WebScrapper - INFO - Open Ai response : {'curr_org': 'fpe', 'curr_title': 'partner and co-founder', 'prv_org': 'singer & friedlander and rbs', 'prv_title': 'lending banker', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:57:43 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:43 - WebScrapper - INFO - Started searching for contact david barcus and Email domain knight.com
+2025-Mar-05 13:57:43 - WebScrapper - INFO - contact : david barcus, company kcg holdings google api serach info found from db.
+2025-Mar-05 13:57:44 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:44 - WebScrapper - INFO - Started searching for contact david barcus and Email domain denison.edu
+2025-Mar-05 13:57:44 - WebScrapper - INFO - contact : david barcus, company denison university google api serach info found from db.
+2025-Mar-05 13:57:44 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:44 - WebScrapper - INFO - Started searching for contact harv barenz and Email domain hgequity.com
+2025-Mar-05 13:57:44 - WebScrapper - INFO - contact : harv barenz, company huntsman gay global capital google api serach info found from db.
+2025-Mar-05 13:57:44 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:44 - WebScrapper - INFO - Started searching for contact harv barenz and Email domain hggc.com
+2025-Mar-05 13:57:44 - WebScrapper - INFO - contact : harv barenz, company hggc -thomson google api serach info found from db.
+2025-Mar-05 13:57:44 - WebScrapper - INFO - Company- hggc -thomson, and its robot file already exists in db.
+2025-Mar-05 13:57:44 - WebScrapper - INFO - Request started for : https://www.hggc.com/team/harv-barenz
+2025-Mar-05 13:57:45 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Open Ai response : {'curr_org': 'hggc', 'curr_title': 'head of business development and partner', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:57:49 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact bhavan barhate and Email domain northernarc.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : bhavan barhate, company northern arc investments google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact bhavan barhate and Email domain ifmr.in
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : bhavan barhate, company northern arc investments google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact philip barker and Email domain arenawealth.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : philip barker, company arena wealth management limited google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact philip barker and Email domain cavendish.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : philip barker, company cavendish google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact veit schwinkendorf and Email domain rolandberger.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : veit schwinkendorf, company  google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact jordan selleck and Email domain bdapartners.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : jordan selleck, company bda partners google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Started searching for contact j selleck and Email domain 5149labs.com
+2025-Mar-05 13:57:49 - WebScrapper - INFO - contact : j selleck, company 51-49 labs google api serach info found from db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Company- 51-49 labs, and its robot file already exists in db.
+2025-Mar-05 13:57:49 - WebScrapper - INFO - Request started for : https://5149labs.com/who-we-are/
+2025-Mar-05 13:57:50 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:57:54 - WebScrapper - INFO - Open Ai response : {'curr_org': '51 labs', 'curr_title': 'co-founder & co-ceo', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:57:54 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:57:54 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:57:54 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:57:54 - WebScrapper - INFO - Started searching for contact joel stevens and Email domain bernstein.com
+2025-Mar-05 13:57:54 - WebScrapper - INFO - contact : joel stevens, company bernstein google api serach info found from db.
+2025-Mar-05 13:57:54 - WebScrapper - INFO - Company- bernstein, and its robot file already exists in db.
+2025-Mar-05 13:57:54 - WebScrapper - INFO - Request started for : https://www.bernstein.com/about-us/locations/tampa/joel-stevens.html
+2025-Mar-05 13:57:58 - WebScrapper - INFO - >>>>> Started searchin using Open AI <<<<<
+2025-Mar-05 13:58:02 - WebScrapper - INFO - Open Ai response : {'curr_org': 'Bernstein', 'curr_title': 'National Managing Director, National Business Development', 'prv_org': 'Not found', 'prv_title': 'Not found', 'email': 'Not found', 'phone': 'Not found'}
+2025-Mar-05 13:58:02 - WebScrapper - INFO - get_linked_profile_by_proxy_curl : code is commented out. PLease uncomment to include it.
+2025-Mar-05 13:58:02 - WebScrapper - INFO - method get_contact_info_using_third_party_db is not implmented yet.
+2025-Mar-05 13:58:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:58:02 - WebScrapper - INFO - Started searching for contact john stevens and Email domain gmam.com
+2025-Mar-05 13:58:02 - WebScrapper - INFO - contact : john stevens, company gm asset management google api serach info found from db.
+2025-Mar-05 13:58:02 - WebScrapper - INFO - -------------------------------------------------------
+2025-Mar-05 13:58:02 - WebScrapper - INFO - Started searching for contact john stevens and Email domain mazuma.org
+2025-Mar-05 13:58:02 - WebScrapper - INFO - contact : john stevens, company mazuma google api serach info found from db.

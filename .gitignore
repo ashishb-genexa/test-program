@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+.vscode/
+.coverage
+db/scrap_backup.db
+.docker-compose.debug.yml
+.docker-compose.yml
+.Dockerfile
